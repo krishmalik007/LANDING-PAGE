@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        /* Header Styles */
+        .hero {
+            background: url('img 2.jpeg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 250px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ff9800 !important;
+        }
+
+        /* About Section Styles */
+        #about img {
+            border-radius: 8px;
+            filter: brightness(80%);
+        }
+
+        #about {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+        
+        /* Contact Section Styles */
+        #contact {
+            padding: 60px 0;
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+        }
+        
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        #contact label {
+            color: #ff9800;
+        }
+
+        #contact .form-control {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #e0e0e0;
+        }
+
+        #contact .form-control::placeholder {
+            color: #bbb;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        .btn-primary {
+            background-color: #ff9800;
+            border-color: #ff9800;
+        }
+
+        .btn-primary:hover {
+            background-color: #e68900;
+            border-color: #e68900;
+        }
+        
+        .btn-light {
+            background-color: #ff9800;
+            border-color: #ff9800;
+            color: #121212;
+        }
+
+        .btn-light:hover {
+            background-color: #e68900;
+            border-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Nature's Beauty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">Embrace the Beauty of Nature</h1>
+            <p class="lead">Explore breathtaking landscapes and preserve our planet</p>
+            <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Us</h2>
+                    <p>Welcome to Nature Beauty, where the wonders of the natural world are celebrated in all their glory. Our passion for the environment drives us to bring you closer to the breathtaking beauty that surrounds us, whether through stunning visuals, insightful content, or carefully curated experiences.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img 1.jpeg" class="img-fluid" alt="Nature">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Nature's Beauty. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
